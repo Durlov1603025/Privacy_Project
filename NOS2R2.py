@@ -92,8 +92,7 @@ def calculate_all_variances(original_data, rotated_xy_data, rotated_yz_data, rot
     variances_xz = []
 
     for angle in range(1, 361):
-        # Select rotated data for each angle
-        rotated_data_xy = rotated_xy_data[angle - 1::360, :]  # Rows corresponding to this angle
+        rotated_data_xy = rotated_xy_data[angle - 1::360, :]  
         rotated_data_yz = rotated_yz_data[angle - 1::360, :]
         rotated_data_xz = rotated_xz_data[angle - 1::360, :]
 
